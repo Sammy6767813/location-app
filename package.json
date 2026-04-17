@@ -1,6 +1,7 @@
 {
   "name": "billett-app",
   "version": "1.0.0",
+  "description": "Billett app",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
