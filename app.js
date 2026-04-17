@@ -1,3 +1,12 @@
+const express = require('express');
+const QRCode = require('qrcode');
+ 
+const app = express();
+const PORT = process.env.PORT || 3000;
+ 
+app.use(express.json());
+ 
+let tickets = {};
 app.get('/pay', (req, res) => {
   const { type, price } = req.query;
  
